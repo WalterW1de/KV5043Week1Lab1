@@ -1,26 +1,12 @@
-// KV5043Week1Lab1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 
 int main()
 {
-	int playerHealth = 100;
-	float enemySpeed = 1.5;
-	double playerXPosition = 10.75;
-	char playerInitial = 'C';
-	bool isGameOver = false;
+	int enemyHealth[5] = { 100, 90, 80, 70, 60 };
+	float enemySpeeds[4] = { 1.5f, 2.3567f, 0.245f, 0.9999999f };
+	double enemyXPositions[6] = { 10.75, 2.3567, 0.245, 0.9999999, 9.9999999999, 1.0 };
+	char playerName[5] = { 'C', 'h', 'r', 'i', 's' };
 
-	std::cout << "Player health (int):" << playerHealth << std::endl;
-	std::cout << "Enemy Speed (Float):" << enemySpeed<< std::endl;
-	std::cout << "Player X Position (double):" << playerXPosition << std::endl;
-	std::cout << "Player Initial (Character):" << playerInitial << std::endl;
-	std::cout << "Is Game Over (bool):" << isGameOver << std::endl;
 
-	std::cout << "Size of int: " << sizeof(int) << "bytes" << std::endl;
-	std::cout << "Size of float: " << sizeof(float) << "bytes" << std::endl;
-	std::cout << "Size of double: " << sizeof(double) << "bytes" << std::endl;
-	std::cout << "Size of char: " << sizeof(char) << "bytes" << std::endl;
-	std::cout << "Size of bool: " << sizeof(bool) << "bytes" << std::endl;
 	return 0;
 }
