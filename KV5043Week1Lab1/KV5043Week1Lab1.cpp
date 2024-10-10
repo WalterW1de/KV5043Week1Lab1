@@ -2,28 +2,19 @@
 
 int main()
 {
-	int enemyYPosition = 100;
-	float enemyYVelocity = 2.3f;
 
-int enemyYvelocityInt = (int)enemyYVelocity;
+    int array[5] = { 3, 5, 3, 7, 9};
 
-	std::cout << enemyYPosition << std::endl;
+    int total = 0;
 
-	enemyYPosition = enemyYPosition * enemyYVelocity; // Implicit Cast of enemyYVelocity from float to int
+    for (int i = 0; i < 5; i++)
+    {
+        total = total + array[i];
+    }
 
-	std::cout << enemyYPosition << std::endl;
+    std::cout << "Total =  " << total << std::endl;
 
-	enemyYPosition = (float)enemyYPosition * enemyYVelocity; // Explicit Cast of enemyYVelocity from float to int
-	
-	std::cout << enemyYPosition << std::endl;
+    std::cout << "Mean = " << total / 5 << std::endl;
 
-	enemyYPosition = float(enemyYPosition) * enemyYVelocity; // Explicit Functional Cast of enemyYVelocity from float to int
-
-	std::cout << enemyYPosition << std::endl;
-
-	enemyYPosition = static_cast <float>(enemyYPosition * enemyYVelocity); // Explicit C++ style Cast of enemyYVelocity from float to int
-
-	std::cout << enemyYPosition << std::endl;
-
-		return 0;
+    return 0;
 }
