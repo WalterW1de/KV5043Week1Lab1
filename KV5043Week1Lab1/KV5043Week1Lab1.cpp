@@ -1,20 +1,12 @@
 #include <iostream>
+#include <iomanip>
 
 int main()
 {
+	float testFloat = 2.3456789;
+	double testDouble = 2.3456789;
+	std::cout << std::setprecision(10) << testFloat << std::endl;
+	std::cout << std::setprecision(10) << testDouble << std::endl;
 
-    int array[5] = { 3, 5, 3, 7, 9};
-
-    int total = 0;
-
-    for (int i = 0; i < 5; i++)
-    {
-        total = total + array[i];
-    }
-
-    std::cout << "Total =  " << total << std::endl;
-
-    std::cout << "Mean = " << total / 5 << std::endl;
-
-    return 0;
+	return 0;
 }
