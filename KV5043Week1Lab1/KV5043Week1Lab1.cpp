@@ -16,5 +16,11 @@ int main()
 	std::cout << "Player X Position (double):" << playerXPosition << std::endl;
 	std::cout << "Player Initial (Character):" << playerInitial << std::endl;
 	std::cout << "Is Game Over (bool):" << isGameOver << std::endl;
+
+	std::cout << "Size of int: " << sizeof(int) << "bytes" << std::endl;
+	std::cout << "Size of float: " << sizeof(float) << "bytes" << std::endl;
+	std::cout << "Size of double: " << sizeof(double) << "bytes" << std::endl;
+	std::cout << "Size of char: " << sizeof(char) << "bytes" << std::endl;
+	std::cout << "Size of bool: " << sizeof(bool) << "bytes" << std::endl;
 	return 0;
 }
